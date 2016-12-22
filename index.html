@@ -1,0 +1,302 @@
+
+	<html>
+		<head>
+			<title>Merry Christmas!</title>
+
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+			<meta name="apple-mobile-web-app-capable" content="yes" />
+			<meta name="apple-mobile-web-app-title" content="Merry Christmas!" />
+
+			<style>
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			a {
+				line-height: normal;
+				font-family: 'Varela Round', sans-serif;
+				font-weight: 600;
+				text-decoration: none;
+				font-size: 13px;
+				color: #A7AAAE;
+				position: absolute;
+				left: 20px;
+				bottom: 20px;
+				border: 1px solid #A7AAAE;
+				padding: 12px 20px 10px 20px;
+				border-radius: 50px;
+				transition: all .1s ease-in-out;
+				text-transform: uppercase;
+				z-index: 5;
+			}
+				a:hover {
+				background: #A7AAAE;
+				color: #fff;
+			}
+			.demos {
+				position: absolute;
+				height: 37px;
+				left: 50%;
+				bottom: 20px;
+				z-index: 5;
+				white-space: nowrap;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
+			.demos a {
+				display: inline-block;
+				position: static;
+				left: auto;
+				bottom: auto;
+				border-radius: 0;
+				margin-left: -1px;
+			}
+			.demos a:first-of-type {
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				margin-left: 0;
+			}
+			.demos a:last-of-type {
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+			}
+
+			/* Christmas */
+			.xmas {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				background: url("bg.jpg") no-repeat 50%/cover;
+			}
+			.xmas:before {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: rgba(21,8,43,0.2);
+			}
+			.xmas .xmas-message {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				z-index: 3;
+				-ms-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: calc(90% - 6rem);
+				height: calc(100% - 12rem);
+				margin: 0 auto;
+				background: url("merryxmas.png") no-repeat 50% 50%/contain;
+			}
+			.xmas #xmas {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				z-index: 4;
+			}
+			.xmas .xmas-message-user {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				z-index: 2;
+				-ms-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: calc(90% - 6rem);
+				height: calc(100% - 12rem);
+				margin: 0 auto;
+				line-height: normal;
+				font-family: 'Varela Round', sans-serif;
+				font-weight: 600;
+				text-decoration: none;
+				font-size: x-large;
+				color: #A7AAAE;			
+			}
+			.xmas .xmas-message-from {
+				position: absolute;		
+				bottom:0;
+				right:0;			
+				z-index: 2;
+				-ms-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: calc(90% - 6rem);
+				height: calc(100% - 12rem);
+				margin: 0 auto;
+				line-height: normal;
+				font-family: 'Varela Round', sans-serif;
+				font-weight: 600;
+				text-decoration: none;
+				font-size: x-large;
+				color: #A7AAAE;			
+			}
+			.xmas .xmas-message-santa{
+					right:0;
+					bottom:0;
+					position:absolute;
+			}		
+			</style>
+		</head>
+		<body>
+		
+			<section class="xmas">			
+				<div class="xmas-message"></div>			
+							
+				
+				<!-- Let it snow! -->
+				<canvas id="xmas"></canvas>
+				<div class="xmas-message-user"><span id="username">Hi, </span>I'd like to wish you <span style="color:#fff">Merry Christmas</span> and a successful new year!<br>			
+				<div class="xmas-message-santa"><span style="color:#fff">Jeet</span>						
+	<svg width="36px" height="45px" class="header-santa" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <title>Merry Christmas and a Happy New Year!</title> <defs> <polygon id="santa-path-1" points="0 29.4808602 22.5791072 29.4808602 22.5791072 0 0 0"></polygon> </defs> <g id="Onboarding-illustrations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Empty-state-walkthrough-features-3" transform="translate(-12.000000, -17.000000)"> <g id="Page-1" transform="translate(12.503346, 17.000000)"> <path d="M16.0651154,23.5299336 L0.966531651,23.5299336 L0.966531651,17.7323793 C0.966531651,15.8836224 2.47888056,14.3712735 4.32763743,14.3712735 L15.1456623,14.3712735 C15.6512035,14.3712735 16.0651154,14.7849995 16.0651154,15.2907266 L16.0651154,23.5299336 Z" id="Fill-1" fill="#FF3A55"></path> <path d="M13.5627978,10.8118915 C13.5627978,11.2639048 13.1964663,11.6300505 12.744453,11.6300505 C12.2926255,11.6300505 11.9262939,11.2639048 11.9262939,10.8118915 C11.9262939,10.3598781 12.2926255,9.99373246 12.744453,9.99373246 C13.1964663,9.99373246 13.5627978,10.3598781 13.5627978,10.8118915" id="Fill-3" fill="#FFC285"></path> <path d="M6.13881325,10.8118915 C6.13881325,11.2639048 5.77248172,11.6300505 5.32046838,11.6300505 C4.8686409,11.6300505 4.5021235,11.2639048 4.5021235,10.8118915 C4.5021235,10.3598781 4.8686409,9.99373246 5.32046838,9.99373246 C5.77248172,9.99373246 6.13881325,10.3598781 6.13881325,10.8118915" id="Fill-5" fill="#FFC285"></path> <path d="M9.25941522,14.4358229 L8.80554328,14.4358229 C6.87296321,14.4358229 5.29165996,12.8545197 5.29165996,10.9219396 L5.29165996,8.59775096 C5.29165996,6.66517089 6.87296321,5.08386764 8.80554328,5.08386764 L9.25941522,5.08386764 C11.1919953,5.08386764 12.7732985,6.66517089 12.7732985,8.59775096 L12.7732985,10.9219396 C12.7732985,12.8545197 11.1919953,14.4358229 9.25941522,14.4358229" id="Fill-7" fill="#FFD5A3"></path> <path d="M5.17482789,6.83740805 C5.17482789,4.70688629 6.92080377,2.79475091 9.03255359,2.51224257 C10.775184,2.27898733 13.2400692,0.538215556 13.251035,1.4717941 C13.277799,3.71810711 12.8900934,5.64065069 12.8900934,6.83740805" id="Fill-9" fill="#FF3A55"></path> <mask id="mask-2" fill="white"> <use xlink:href="#santa-path-1"></use> </mask> <g id="Clip-12"></g> <polygon id="Fill-11" fill="#FFFFFF" mask="url(#mask-2)" points="8.17527089 23.5408632 9.86827645 23.5408632 9.86827645 16.5408632 8.17527089 16.5408632"></polygon> <path d="M14.1803759,1.6577106 C14.1803759,2.36788452 13.6045793,2.94349526 12.8945913,2.94349526 C12.1842315,2.94349526 11.6086207,2.36788452 11.6086207,1.6577106 C11.6086207,0.947536683 12.1842315,0.371925944 12.8945913,0.371925944 C13.6045793,0.371925944 14.1803759,0.947536683 14.1803759,1.6577106" id="Fill-13" fill="#000000" opacity="0.3" mask="url(#mask-2)"></path> <path d="M14.3662367,1.28598911 C14.3662367,1.99616303 13.7904401,2.57177377 13.080452,2.57177377 C12.3700922,2.57177377 11.7944815,1.99616303 11.7944815,1.28598911 C11.7944815,0.575815185 12.3700922,0.000204446823 13.080452,0.000204446823 C13.7904401,0.000204446823 14.3662367,0.575815185 14.3662367,1.28598911" id="Fill-14" fill="#F9F9F9" mask="url(#mask-2)"></path> <path d="M9.97172654,17.100304 L8.09323196,17.100304 C6.55244635,17.100304 5.29175289,15.8396106 5.29175289,14.298825 L5.29175289,11.489168 L12.7732056,11.489168 L12.7732056,14.298825 C12.7732056,15.8396106 11.5125121,17.100304 9.97172654,17.100304" id="Fill-15" fill="#44393C" opacity="0.3" mask="url(#mask-2)"></path> <path d="M9.97172654,16.5400082 L8.09323196,16.5400082 C6.55244635,16.5400082 5.29175289,15.2793148 5.29175289,13.7385292 L5.29175289,10.9288722 L12.7732056,10.9288722 L12.7732056,13.7385292 C12.7732056,15.2793148 11.5125121,16.5400082 9.97172654,16.5400082" id="Fill-16" fill="#FFFFFF" mask="url(#mask-2)"></path> <path d="M9.96765619,11.8640863 C9.96765619,12.3804075 9.54909779,12.7991518 9.03259077,12.7991518 C8.51589789,12.7991518 8.09733948,12.3804075 8.09733948,11.8640863" id="Fill-17" fill="#6B1F3A" mask="url(#mask-2)"></path> <path d="M6.99171167,9.97231302 C6.99171167,10.0895147 6.89663308,10.1847622 6.77926253,10.1847622 C6.66189198,10.1847622 6.56681339,10.0895147 6.56681339,9.97231302 C6.56681339,9.85494247 6.66189198,9.75986388 6.77926253,9.75986388 C6.89663308,9.75986388 6.99171167,9.85494247 6.99171167,9.97231302" id="Fill-18" fill="#44393C" mask="url(#mask-2)"></path> <path d="M11.1999893,9.97231302 C11.1999893,10.0895147 11.1049107,10.1847622 10.9875402,10.1847622 C10.8701696,10.1847622 10.775091,10.0895147 10.775091,9.97231302 C10.775091,9.85494247 10.8701696,9.75986388 10.9875402,9.75986388 C11.1049107,9.75986388 11.1999893,9.85494247 11.1999893,9.97231302" id="Fill-19" fill="#44393C" mask="url(#mask-2)"></path> <path d="M12.6334012,9.3849084 L5.431483,9.3849084 C5.06533733,9.3849084 4.7657298,9.08530087 4.7657298,8.7191552 L4.7657298,7.94671793 C4.7657298,7.58038639 5.06533733,7.28077887 5.431483,7.28077887 L12.6334012,7.28077887 C12.9997327,7.28077887 13.2993402,7.58038639 13.2993402,7.94671793 L13.2993402,8.7191552 C13.2993402,9.08530087 12.9997327,9.3849084 12.6334012,9.3849084" id="Fill-20" fill="#000000" opacity="0.3" mask="url(#mask-2)"></path> <path d="M12.6334012,8.824594 L5.431483,8.824594 C5.06533733,8.824594 4.7657298,8.52498648 4.7657298,8.15865494 L4.7657298,7.38640353 C4.7657298,7.02007199 5.06533733,6.72046447 5.431483,6.72046447 L12.6334012,6.72046447 C12.9997327,6.72046447 13.2993402,7.02007199 13.2993402,7.38640353 L13.2993402,8.15865494 C13.2993402,8.52498648 12.9997327,8.824594 12.6334012,8.824594" id="Fill-21" fill="#FCFCFC" mask="url(#mask-2)"></path> <path d="M9.03253501,11.3963492 L9.03253501,11.3963492 C8.71099591,11.3963492 8.44800295,11.1333562 8.44800295,10.8118171 C8.44800295,10.4904639 8.71099591,10.2274709 9.03253501,10.2274709 C9.35388824,10.2274709 9.61706706,10.4904639 9.61706706,10.8118171 C9.61706706,11.1333562 9.35388824,11.3963492 9.03253501,11.3963492" id="Fill-22" fill="#E68588" mask="url(#mask-2)"></path> <path d="M14.8995827,17.6353786 C17.9616385,17.5935599 19.6048334,15.9195121 21.0578927,12.793706 C22.0764096,10.6033371 22.1593035,8.87297356 22.1669238,8.78190179 L19.4817936,8.11782133 L20.8242658,8.44995449 L19.481236,8.11782133 C19.4797491,8.13566397 19.3147048,9.93052122 18.4892972,11.672594 C17.4940129,13.7733781 16.1314677,14.3497322 14.185134,14.3763103 L14.8995827,17.6353786 Z" id="Fill-23" fill="#FF3A55" mask="url(#mask-2)"></path> <path d="M19.6779696,8.34362356 L22.1764956,8.6824477 L22.4608626,6.58631018 C22.5469161,5.95289675 22.0988058,5.36427576 21.4653924,5.27822223 L21.2704245,5.25183 C20.6370111,5.16577648 20.0483901,5.61370088 19.9623365,6.24730017 L19.6779696,8.34362356 Z" id="Fill-24" fill="#FFD5A3" mask="url(#mask-2)"></path> <path d="M19.539206,8.32474011 L20.510886,8.45651538 L20.6688676,7.29191192 C20.7164479,6.94007753 20.4677663,6.61314847 20.115746,6.56538226 L20.007575,6.55069926 C19.9321156,6.54029106 19.8577713,6.54363655 19.7871442,6.55887713 C19.4525948,6.63043352 19.254839,6.98078103 19.325652,7.31551624 L19.539206,8.32474011 Z" id="Fill-25" fill="#FFD5A3" mask="url(#mask-2)"></path> <path d="M19.3884729,9.43518373 L21.8869989,9.77419374 C22.1923681,9.81564069 22.4761775,9.5996705 22.5174386,9.29430129 L22.5741261,8.87778735 C22.6153872,8.57241814 22.3996029,8.28879464 22.0942337,8.24734769 L19.5957076,7.90833768 C19.2903384,7.86689074 19.0065291,8.08286093 18.9650821,8.38823014 L18.9085804,8.80455821 C18.8671335,9.10992742 19.0831037,9.39373679 19.3884729,9.43518373" id="Fill-26" fill="#F1F1F1" mask="url(#mask-2)"></path> <path d="M0.523439626,22.3715937 C0.920252325,24.7545143 1.82911139,26.2293194 1.87408969,26.308496 L4.46517438,25.3399757 L3.16972497,25.8243288 L4.46554611,25.3399757 C4.45699651,25.3243634 3.5791762,23.7501228 3.27640904,21.8461653 C2.91137853,19.5502275 2.97884598,18.7716568 4.2648165,17.470074 C4.2648165,17.470074 3.25875226,15.151647 3.22548319,15.1756231 C0.767103068,16.9407426 -0.0380456953,18.9995221 0.523439626,22.3715937 Z" id="Fill-27" fill="#44393C" mask="url(#mask-2)"></path> <path d="M3.63458128,15.2556733 C3.33813339,14.8136964 2.72070398,14.7484593 2.32742264,15.1067988 C0.400232536,16.8620677 -0.350830749,19.3524159 0.151736715,22.3715379 C0.548549414,24.7544586 1.45740847,26.2292636 1.50238678,26.3086261 L4.09347147,25.3401058 L2.79802205,25.824273 L4.09384319,25.3399199 C4.0852936,25.3244935 3.20747328,23.7500671 2.90470612,21.8461096 C2.58558322,19.8404862 3.07514043,18.5195739 4.26483508,17.4700182 C4.57447909,17.1968029 4.62428977,16.7315935 4.39438003,16.3886804 L3.63458128,15.2556733 Z" id="Fill-28" fill="#FF3A55" mask="url(#mask-2)"></path> <path d="M4.61852809,26.8866717 C4.78840481,26.7708804 4.8893272,26.5824176 4.89954954,26.3850335 C4.90809913,26.2209185 4.83189623,26.0633085 4.71313121,25.9499335 L3.92935643,25.201844 L3.80408629,25.264479 L3.32865449,25.503496 L3.053023,25.6417764 L1.55071057,26.3958134 L2.5212754,28.3291369 C2.79634931,28.8770544 3.4697228,29.1000873 4.01764029,28.8251993 L4.27858878,28.6941674 C4.82650627,28.4189077 5.04972502,27.7455342 4.77465112,27.1978026 L4.61852809,26.8866717 Z" id="Fill-32" fill="#FFD5A3" mask="url(#mask-2)"></path> <path d="M3.46896077,24.1789965 L1.13046083,25.352893 C0.878433656,25.4794642 0.775838523,25.789294 0.902409693,26.0413212 L1.13380633,26.5018842 C1.26019163,26.7539113 1.56983564,26.8565065 1.82186282,26.7301212 L4.16036276,25.5558529 C4.41238993,25.4294676 4.51498506,25.1198236 4.3884139,24.8677965 L4.15720312,24.4072335 C4.03063195,24.1550205 3.72098795,24.0524253 3.46896077,24.1789965" id="Fill-33" fill="#F1F1F1" mask="url(#mask-2)"></path> </g> </g> </g> </svg> 
+	</div>
+				</div>
+			</section>
+			<script>
+			document.addEventListener("DOMContentLoaded", function(event) {
+			  iProDevSnow(); //source credits: https://demo.iprodev.com/christmas/mousemove.html
+			  getUrlParameter('u') ? document.querySelector('#username').textContent = getUrlParameter('u') + ', ' : "";
+			});
+
+			// iProDevSnow Christmas! \o/
+			var iProDevSnow = function(){
+
+				(function() {
+					var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+					function(callback) {
+						window.setTimeout(callback, 1000 / 60);
+					};
+					window.requestAnimationFrame = requestAnimationFrame;
+				})();
+
+				var flakes = [],
+					canvas = document.getElementById("xmas"),
+					ctx = canvas.getContext("2d"),
+					parent = canvas.parentNode,
+					retina = window.devicePixelRatio,
+					flakeCount = parent.offsetWidth < 767 ? 125 : 450,
+					mX = -200,
+					mY = -200;
+
+				canvas.width = parent.offsetWidth * retina;
+				canvas.height = parent.offsetHeight * retina;
+
+				function snowFrame() {
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+					for (var i = 0; i < flakeCount; i++) {
+						var flake = flakes[i],
+							x = mX,
+							y = mY,
+							minDist = 200 * retina,
+							x2 = flake.x,
+							y2 = flake.y;
+
+						var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+							dx = x2 - x,
+							dy = y2 - y;
+
+						if (dist < minDist) {
+							var force = minDist / (dist * dist),
+							xcomp = (x - x2) / dist * retina,
+							ycomp = (y - y2) / dist * retina,
+							deltaV = force / 2 * retina;
+
+							flake.velX -= deltaV * xcomp;
+							flake.velY -= deltaV * ycomp;
+						} else {
+							flake.velX *= .98;
+							if (flake.velY <= flake.speed) {
+								flake.velY = flake.speed
+							}
+							flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+						}
+
+						ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+						flake.y += flake.velY;
+						flake.x += flake.velX;
+							
+						if (flake.y >= canvas.height || flake.y <= 0) {
+							reset(flake);
+						}
+
+						if (flake.x >= canvas.width || flake.x <= 0) {
+							reset(flake);
+						}
+
+						ctx.beginPath();
+						ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+						ctx.fill();
+					}
+					requestAnimationFrame(snowFrame);
+				};
+
+				function reset(flake) {
+					flake.x = Math.floor(Math.random() * canvas.width);
+					flake.y = 0;
+					flake.size = ((Math.random() * 3) + getRandomInt(2, 4)) * retina;
+					flake.speed = ((Math.random() * 1) + 0.2) * retina;
+					flake.velY = flake.speed;
+					flake.velX = 0;
+					flake.opacity = (Math.random() * 0.5) + 0.4;
+				}
+
+				function init() {
+					for (var i = 0; i < flakeCount; i++) {
+						var x = Math.floor(Math.random() * canvas.width),
+							y = Math.floor(Math.random() * canvas.height),
+							size = ((Math.random() * 3) + getRandomInt(2, 4)) * retina,
+							speed = ((Math.random() * 1) + 0.2) * retina,
+							opacity = (Math.random() * 0.5) + 0.4;
+
+						flakes.push({
+							speed: speed,
+							velY: speed,
+							velX: 0,
+							x: x,
+							y: y,
+							size: size,
+							stepSize: (Math.random()) / 30,
+							step: 0,
+							opacity: opacity
+						});
+					}
+
+					snowFrame();
+				};
+
+				canvas.addEventListener("mouseenter", function() {
+					canvas.addEventListener("mousemove", function(e) {
+						mX = (e.pageX - canvas.offsetLeft) * retina,
+						mY = (e.pageY - canvas.offsetTop) * retina;
+					});
+				});
+
+				canvas.addEventListener("mouseleave", function() {
+					canvas.removeEventListener("mousemove");
+					mX = -300,
+					mY = -300;
+				});
+
+				window.addEventListener("resize",function(){
+					canvas.width = parent.offsetWidth * retina;
+					canvas.height = parent.offsetHeight * retina;
+				});
+
+				init();
+			};
+			// Returns a random integer between min (included) and max (excluded)
+			// Using Math.round() will give you a non-uniform distribution!
+			function getRandomInt(min, max) {
+			  return Math.floor(Math.random() * (max - min)) + min;
+			}
+			function getUrlParameter(name) {
+				name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+				var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+				var results = regex.exec(location.search);
+				return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+			};
+			</script>
+		</body>
+	</html>
